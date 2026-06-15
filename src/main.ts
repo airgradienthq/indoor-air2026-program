@@ -744,6 +744,10 @@ function render() {
             </div>
             <div class="source-pill">${icon("file-check-2")} ${escapeHtml(validation.errors.length)} validation errors</div>
           </div>
+          <p class="site-disclaimer">
+            ${icon("info")}
+            <span>This is an unofficial site to help conference participants find sessions, talks, and posters they are interested in. It was developed by <a href="https://www.airgradient.com/" target="_blank" rel="noreferrer">AirGradient</a>, which also has a booth at the conference.</span>
+          </p>
           <div class="search-row">
             <div class="search-box">
               ${icon("search")}
