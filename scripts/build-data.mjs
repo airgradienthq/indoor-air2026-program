@@ -291,6 +291,13 @@ function nearestLowerTime(timeLabels, y) {
   return timeLabels.find((label) => label.yTop < y - 2);
 }
 
+function parsePosterPanelSessionCode(panel) {
+  const candidate = clean(panel)
+    .replace(/^P[X]?\d+-/i, "")
+    .replace(/\s*-?\s*\d{5}$/i, "");
+  return sessionCodePattern.test(candidate) ? candidate : undefined;
+}
+
 function parseProgramme(pdf) {
   const sessionSlots = [];
   const paperSchedule = new Map();
@@ -495,12 +502,14 @@ function parsePosterAssignments(pdf) {
           .join(" ")
       );
       const panel = applyCorrection("posterPanels", panelItem.str);
+      const sessionCode = parsePosterPanelSessionCode(panel);
       const sourceLines = page.lines.filter(
         (line) => Math.abs(line.y - panelItem.y) <= 8 && line.items.some((item) => Math.abs(item.x - panelItem.x) < 80)
       );
       assignments.set(paperId, {
         posterGroup,
         panel,
+        sessionCode,
         assignmentName: presenter,
         date,
         startTime: time?.startTime,
@@ -663,6 +672,7 @@ const posterAssignments = parsePosterAssignments(postersPdf);
 
 const eventMap = new Map();
 const presenterMap = new Map();
+const sessionSlotsByCode = new Map(programme.sessionSlots.map((slot) => [slot.sessionCode, slot]));
 
 for (const slot of programme.sessionSlots) {
   eventMap.set(slot.id, {
@@ -688,6 +698,24 @@ for (const slot of programme.sessionSlots) {
 for (const record of details.records) {
   const assignment = posterAssignments.assignments.get(record.paperId);
   const programmeSchedule = programme.paperSchedule.get(record.paperId);
+  const posterSessionSlot =
+    record.type === "poster"
+      ? sessionSlotsByCode.get(assignment?.sessionCode) ?? sessionSlotsByCode.get(record.sessionCode)
+      : undefined;
+  const posterSessionSchedule = posterSessionSlot
+    ? {
+        sessionId: posterSessionSlot.id,
+        sessionCode: posterSessionSlot.sessionCode,
+        date: posterSessionSlot.date,
+        startTime: posterSessionSlot.startTime,
+        endTime: posterSessionSlot.endTime,
+        timezone,
+        room: assignment?.room ?? posterSessionSlot.room,
+        sourceFile: posterSessionSlot.sourceFile,
+        sourcePage: posterSessionSlot.sourcePage,
+        sourceSnippet: posterSessionSlot.sourceSnippet
+      }
+    : undefined;
   const assignmentSchedule =
     record.type === "poster" && assignment?.date && assignment?.startTime && assignment?.endTime
       ? {
@@ -701,7 +729,8 @@ for (const record of details.records) {
           sourceSnippet: assignment.sourceSnippet
         }
       : undefined;
-  const schedule = programmeSchedule ?? assignmentSchedule;
+  const schedule = record.type === "poster" ? posterSessionSchedule ?? programmeSchedule ?? assignmentSchedule : programmeSchedule;
+  const sessionCode = record.type === "poster" && assignment?.sessionCode ? assignment.sessionCode : record.sessionCode;
   const override = corrections.itemOverrides?.[record.paperId] ?? {};
   const warnings = [...record.warnings];
   if (!schedule) warnings.push("No exact timetable match found for this paper ID");
@@ -716,8 +745,9 @@ for (const record of details.records) {
     timezone,
     room: override.room ?? schedule?.room,
     location: override.location ?? assignment?.room ?? schedule?.room,
-    parentId: programmeSchedule?.sessionId,
-    track: record.sessionCode.split("-")[0],
+    parentId: posterSessionSchedule?.sessionId ?? programmeSchedule?.sessionId,
+    track: sessionCode.split("-")[0],
+    sessionCode,
     posterPanel: override.posterPanel ?? assignment?.panel,
     posterGroup: assignment?.posterGroup,
     posterAssignmentName: assignment?.assignmentName,

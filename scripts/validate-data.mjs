@@ -34,6 +34,7 @@ const errors = [];
 const warnings = [];
 const eventIds = new Set(events.map((event) => event.id));
 const presenterIds = new Set(presenters.map((presenter) => presenter.id));
+const eventById = new Map(events.map((event) => [event.id, event]));
 
 failIf(!Array.isArray(events) || events.length === 0, errors, "events.json must contain events.");
 failIf(!Array.isArray(presenters), errors, "presenters.json must contain an array.");
@@ -58,6 +59,15 @@ for (const event of events) {
 
   if (event.parentId) {
     failIf(!eventIds.has(event.parentId), errors, `Event ${event.id} references missing parentId ${event.parentId}.`);
+    const parent = eventById.get(event.parentId);
+    if (event.type === "poster" && parent?.type === "session") {
+      failIf(event.date !== parent.date, errors, `Poster ${event.id} date differs from parent session ${event.parentId}.`);
+      failIf(
+        event.startTime !== parent.startTime || event.endTime !== parent.endTime,
+        errors,
+        `Poster ${event.id} time differs from parent session ${event.parentId}.`
+      );
+    }
   }
   for (const presenterId of event.presenterIds ?? []) {
     failIf(!presenterIds.has(presenterId), errors, `Event ${event.id} references missing presenter ${presenterId}.`);

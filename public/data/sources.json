@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T01:34:53.415Z",
+  "generatedAt": "2026-06-15T03:07:33.575Z",
   "timezone": "Asia/Singapore",
   "sourceFiles": [
     {
@@ -30,8 +30,8 @@
     "posters": 216,
     "presenters": 2678,
     "searchDocuments": 3831,
-    "scheduledItems": 745,
-    "warnings": 178
+    "scheduledItems": 750,
+    "warnings": 173
   },
   "warnings": [
     "Missing title for paper 11260 on page 61",
@@ -49,11 +49,6 @@
     "paper-10157: No exact timetable match found for this paper ID",
     "paper-11176: No exact timetable match found for this paper ID",
     "paper-10431: No exact timetable match found for this paper ID",
-    "paper-10409: No exact timetable match found for this paper ID",
-    "paper-10554: No exact timetable match found for this paper ID",
-    "paper-10328: No exact timetable match found for this paper ID",
-    "paper-10539: No exact timetable match found for this paper ID",
-    "paper-10126: No exact timetable match found for this paper ID",
     "paper-10917: No exact timetable match found for this paper ID",
     "paper-10629: No exact timetable match found for this paper ID",
     "paper-10813: No exact timetable match found for this paper ID",

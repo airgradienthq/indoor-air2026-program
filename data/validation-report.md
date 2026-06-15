@@ -1,6 +1,6 @@
 # Data Validation Review
 
-Generated: 2026-06-15T01:34:53.415Z
+Generated: 2026-06-15T03:07:33.575Z
 Timezone: Asia/Singapore
 
 ## Counts
@@ -10,7 +10,7 @@ Timezone: Asia/Singapore
 - Talks: 574
 - Posters: 216
 - Special events: 32
-- Warnings: 177
+- Warnings: 172
 
 ## Warning Items
 
@@ -179,67 +179,6 @@ Su, Chun Xiao Measurement and Stacking Ensemble Learning
 AIML-1-02 Oral-08 10431 Teo, Seow Hian David; Agentic AI for Indoor Air Quality Management: Bridging WELL and ASHRAE Standards with Teo, Seow Hian David
 Shi, Chee Wai Patrick; Real-Time Data
 Perisamy, Jothi
-```
-
-### Stacked Ensemble Machine Learning for Indoor Air Quality Prediction Using Real-World Environmental Data
-
-- ID: paper-10409
-- Source: Session details as at 12 June 2026_2008hrs.pdf, page 7
-- Warnings: No exact timetable match found for this paper ID
-
-```text
-AIML-1-02 Poster-03 10409 Moses, Abasiofon Ime (1); Stacked Ensemble Machine Learning for Indoor Air Quality Prediction Using Real-World Moses, Abasiofon Ime
-Inyang, ThankGod Ime (2) Environmental Data
-```
-
-### Data-Driven Sensitivity Analysis and Simulation-Based Investigation of Energy Performance Drivers in Large Shopping Malls
-
-- ID: paper-10554
-- Source: Session details as at 12 June 2026_2008hrs.pdf, page 7
-- Warnings: No exact timetable match found for this paper ID
-
-```text
-AIML-1-02 Poster-04 10554 Yang, Fan; Data-Driven Sensitivity Analysis and Simulation-Based Investigation of Energy Performance Yang, Fan
-Li, Xiaofeng Drivers in Large Shopping Malls
-```
-
-### A study on estimating clo values in underground shopping arcades using image analysis with machine learning
-
-- ID: paper-10328
-- Source: Session details as at 12 June 2026_2008hrs.pdf, page 7
-- Warnings: No exact timetable match found for this paper ID
-
-```text
-AIML-1-02 Poster-05 10328 Miyazaki, Riho (1); A study on estimating clo values in underground shopping arcades using image analysis with Miyazaki, Riho
-Tanaka, Aoi (1); machine learning
-Kim, Jeongsoo (1);
-Nishihara, Naoe (2)
-```
-
-### Machine learning thermal sensation prediction model based on spatial cold exposure differences
-
-- ID: paper-10539
-- Source: Session details as at 12 June 2026_2008hrs.pdf, page 7
-- Warnings: No exact timetable match found for this paper ID
-
-```text
-AIML-1-02 Poster-X06 10539 Li, Yawei (1); Machine learning thermal sensation prediction model based on spatial cold exposure Li, Yawei
-Yan, Haiyan (1,2); differences
-Guo, Yongxuan (1);
-Huang, Weijie (1);
-Shi, Fangning (3);
-Sun, Zhen (4)
-```
-
-### Research on Comprehensive Comfort of Elderly-Friendly Indoor Environments Based on Machine Learning
-
-- ID: paper-10126
-- Source: Session details as at 12 June 2026_2008hrs.pdf, page 7
-- Warnings: No exact timetable match found for this paper ID
-
-```text
-AIML-1-02 Poster-X07 10126 Song, xiangyu; Research on Comprehensive Comfort of Elderly-Friendly Indoor Environments Based on Song, xiangyu
-Luo, Siyi Machine Learning
 ```
 
 ### Seasonal influences on indoor air quality data: Implications for activity recognition model accuracy and generalisability
