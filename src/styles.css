@@ -517,6 +517,13 @@ button {
   color: #8a3d10;
 }
 
+.type-badge.poster-session {
+  max-width: 88px;
+  line-height: 1.15;
+  text-align: center;
+  white-space: normal;
+}
+
 .icon-button {
   width: 36px;
   height: 36px;

@@ -57,7 +57,7 @@
     "itemId": "session-ieq-1-01-2026-06-15-1100-smu-halls-b1-1-b1-2",
     "type": "session",
     "title": "Session IEQ-1-01",
-    "body": "6 listed papers in this timetable block. IEQ-1-01 SMU Halls (B1.1 - B1.2) IEQ",
+    "body": "Talks cover health, wellbeing, and occupant outcomes, human behavior and perception, and ventilation and air distribution. IEQ-1-01 SMU Halls (B1.1 - B1.2) IEQ",
     "keywords": [
       "session",
       "IEQ-1-01",
@@ -69,7 +69,7 @@
     "itemId": "session-ieq-1-11-2026-06-15-1100-room-b1-13",
     "type": "session",
     "title": "Session IEQ-1-11",
-    "body": "6 listed papers in this timetable block. IEQ-1-11 Room B1.13 IEQ",
+    "body": "Talks cover buildings, retrofits, and energy performance, health, wellbeing, and occupant outcomes, and human behavior and perception. IEQ-1-11 Room B1.13 IEQ",
     "keywords": [
       "session",
       "IEQ-1-11",
@@ -81,7 +81,7 @@
     "itemId": "session-iatm-1-01-2026-06-15-1100-room-2-04",
     "type": "session",
     "title": "Session IATM-1-01",
-    "body": "6 listed papers in this timetable block. IATM-1-01 Room 2.04 IATM",
+    "body": "Talks cover airborne infection and pathogen transmission, transport, healthcare, and public environments, and ventilation and air distribution. IATM-1-01 Room 2.04 IATM",
     "keywords": [
       "session",
       "IATM-1-01",
@@ -93,7 +93,7 @@
     "itemId": "session-esg-1-01-2026-06-15-1100-room-2-05",
     "type": "session",
     "title": "Session ESG-1-01",
-    "body": "6 listed papers in this timetable block. ESG-1-01 Room 2.05 ESG",
+    "body": "Talks cover policy, standards, ESG, and equity, human behavior and perception, and buildings, retrofits, and energy performance. ESG-1-01 Room 2.05 ESG",
     "keywords": [
       "session",
       "ESG-1-01",
@@ -105,7 +105,7 @@
     "itemId": "session-apm-1-01-2026-06-15-1100-room-2-15",
     "type": "session",
     "title": "Session APM-1-01",
-    "body": "6 listed papers in this timetable block. APM-1-01 Room 2.15 APM",
+    "body": "Talks cover particulate matter and aerosol exposure, cleaning, disinfection, and air purification, and microbes, mould, and bioaerosols. APM-1-01 Room 2.15 APM",
     "keywords": [
       "session",
       "APM-1-01",
@@ -117,7 +117,7 @@
     "itemId": "session-hwbp-1-01-2026-06-15-1100-room-2-16",
     "type": "session",
     "title": "Session HWBP-1-01",
-    "body": "6 listed papers in this timetable block. HWBP-1-01 Room 2.16 HWBP",
+    "body": "Talks cover health, wellbeing, and occupant outcomes, policy, standards, ESG, and equity, and schools, homes, and community spaces. HWBP-1-01 Room 2.16 HWBP",
     "keywords": [
       "session",
       "HWBP-1-01",
@@ -141,7 +141,7 @@
     "itemId": "session-icst-1-01-2026-06-15-1100-room-3-10",
     "type": "session",
     "title": "Session ICST-1-01",
-    "body": "6 listed papers in this timetable block. ICST-1-01 Room 3.10 ICST",
+    "body": "Talks cover indoor chemistry and VOCs, particulate matter and aerosol exposure, and buildings, retrofits, and energy performance. ICST-1-01 Room 3.10 ICST",
     "keywords": [
       "session",
       "ICST-1-01",
@@ -153,7 +153,7 @@
     "itemId": "session-dip-1-01-2026-06-15-1100-room-3-11",
     "type": "session",
     "title": "Session DIP-1-01",
-    "body": "6 listed papers in this timetable block. DIP-1-01 Room 3.11 DIP",
+    "body": "Talks cover buildings, retrofits, and energy performance, sensors, monitoring, and data models, and schools, homes, and community spaces. DIP-1-01 Room 3.11 DIP",
     "keywords": [
       "session",
       "DIP-1-01",
@@ -165,7 +165,7 @@
     "itemId": "session-iap-1-01-2026-06-15-1100-room-3-12",
     "type": "session",
     "title": "Session IAP-1-01",
-    "body": "6 listed papers in this timetable block. IAP-1-01 Room 3.12 IAP",
+    "body": "Talks cover health, wellbeing, and occupant outcomes, schools, homes, and community spaces, and thermal comfort, humidity, and heat stress. IAP-1-01 Room 3.12 IAP",
     "keywords": [
       "session",
       "IAP-1-01",
@@ -1903,7 +1903,7 @@
     "itemId": "session-ieq-1-02-2026-06-15-1330-smu-halls-b1-1-b1-2",
     "type": "session",
     "title": "Session IEQ-1-02",
-    "body": "6 listed papers in this timetable block. IEQ-1-02 SMU Halls (B1.1 - B1.2) IEQ",
+    "body": "Talks cover thermal comfort, humidity, and heat stress, health, wellbeing, and occupant outcomes, and buildings, retrofits, and energy performance. IEQ-1-02 SMU Halls (B1.1 - B1.2) IEQ",
     "keywords": [
       "session",
       "IEQ-1-02",
@@ -1915,7 +1915,7 @@
     "itemId": "session-ieq-1-12-2026-06-15-1330-room-b1-13",
     "type": "session",
     "title": "Session IEQ-1-12",
-    "body": "6 listed papers in this timetable block. IEQ-1-12 Room B1.13 IEQ",
+    "body": "Talks cover thermal comfort, humidity, and heat stress, schools, homes, and community spaces, and sensors, monitoring, and data models. IEQ-1-12 Room B1.13 IEQ",
     "keywords": [
       "session",
       "IEQ-1-12",
@@ -1927,7 +1927,7 @@
     "itemId": "session-iatm-1-02-2026-06-15-1330-room-2-04",
     "type": "session",
     "title": "Session IATM-1-02",
-    "body": "6 listed papers in this timetable block. IATM-1-02 Room 2.04 IATM",
+    "body": "Talks cover airborne infection and pathogen transmission, microbes, mould, and bioaerosols, and sensors, monitoring, and data models. IATM-1-02 Room 2.04 IATM",
     "keywords": [
       "session",
       "IATM-1-02",
@@ -1951,7 +1951,7 @@
     "itemId": "session-apm-1-02-2026-06-15-1330-room-2-15",
     "type": "session",
     "title": "Session APM-1-02",
-    "body": "6 listed papers in this timetable block. APM-1-02 Room 2.15 APM",
+    "body": "Talks cover particulate matter and aerosol exposure, schools, homes, and community spaces, and buildings, retrofits, and energy performance. APM-1-02 Room 2.15 APM",
     "keywords": [
       "session",
       "APM-1-02",
@@ -1963,7 +1963,7 @@
     "itemId": "session-hwbp-1-02-2026-06-15-1330-room-2-16",
     "type": "session",
     "title": "Session HWBP-1-02",
-    "body": "6 listed papers in this timetable block. HWBP-1-02 Room 2.16 HWBP",
+    "body": "Talks cover health, wellbeing, and occupant outcomes, schools, homes, and community spaces, and airborne infection and pathogen transmission. HWBP-1-02 Room 2.16 HWBP",
     "keywords": [
       "session",
       "HWBP-1-02",
@@ -1975,7 +1975,7 @@
     "itemId": "session-acf-1-01-2026-06-15-1330-room-3-09",
     "type": "session",
     "title": "Session ACF-1-01",
-    "body": "6 listed papers in this timetable block. ACF-1-01 Room 3.09 ACF",
+    "body": "Talks cover cleaning, disinfection, and air purification, buildings, retrofits, and energy performance, and policy, standards, ESG, and equity. ACF-1-01 Room 3.09 ACF",
     "keywords": [
       "session",
       "ACF-1-01",
@@ -2011,7 +2011,7 @@
     "itemId": "session-vad-1-01-2026-06-15-1330-room-3-12",
     "type": "session",
     "title": "Session VAD-1-01",
-    "body": "6 listed papers in this timetable block. VAD-1-01 Room 3.12 VAD",
+    "body": "Talks cover ventilation and air distribution, schools, homes, and community spaces, and airborne infection and pathogen transmission. VAD-1-01 Room 3.12 VAD",
     "keywords": [
       "session",
       "VAD-1-01",
@@ -3399,7 +3399,7 @@
     "itemId": "session-ieq-1-03-2026-06-15-1530-smu-halls-b1-1-b1-2",
     "type": "session",
     "title": "Session IEQ-1-03",
-    "body": "6 listed papers in this timetable block. IEQ-1-03 SMU Halls (B1.1 - B1.2) IEQ",
+    "body": "Talks cover thermal comfort, humidity, and heat stress, health, wellbeing, and occupant outcomes, and schools, homes, and community spaces. IEQ-1-03 SMU Halls (B1.1 - B1.2) IEQ",
     "keywords": [
       "session",
       "IEQ-1-03",
@@ -3411,7 +3411,7 @@
     "itemId": "session-sb-1-01-2026-06-15-1530-room-b1-13",
     "type": "session",
     "title": "Session SB-1-01",
-    "body": "6 listed papers in this timetable block. SB-1-01 Room B1.13 SB",
+    "body": "Talks cover sensors, monitoring, and data models, thermal comfort, humidity, and heat stress, and indoor chemistry and VOCs. SB-1-01 Room B1.13 SB",
     "keywords": [
       "session",
       "SB-1-01",
@@ -3423,7 +3423,7 @@
     "itemId": "session-rb-1-01-2026-06-15-1530-room-2-04",
     "type": "session",
     "title": "Session RB-1-01",
-    "body": "6 listed papers in this timetable block. RB-1-01 Room 2.04 RB",
+    "body": "Talks cover thermal comfort, humidity, and heat stress, buildings, retrofits, and energy performance, and schools, homes, and community spaces. RB-1-01 Room 2.04 RB",
     "keywords": [
       "session",
       "RB-1-01",
@@ -3435,7 +3435,7 @@
     "itemId": "session-mhvac-1-01-2026-06-15-1530-room-2-05",
     "type": "session",
     "title": "Session MHVAC-1-01",
-    "body": "6 listed papers in this timetable block. MHVAC-1-01 Room 2.05 MHVAC",
+    "body": "Talks cover indoor chemistry and VOCs, thermal comfort, humidity, and heat stress, and buildings, retrofits, and energy performance. MHVAC-1-01 Room 2.05 MHVAC",
     "keywords": [
       "session",
       "MHVAC-1-01",
@@ -3447,7 +3447,7 @@
     "itemId": "session-aiml-1-01-2026-06-15-1530-room-2-15",
     "type": "session",
     "title": "Session AIML-1-01",
-    "body": "6 listed papers in this timetable block. AIML-1-01 Room 2.15 AIML",
+    "body": "Talks cover sensors, monitoring, and data models, thermal comfort, humidity, and heat stress, and health, wellbeing, and occupant outcomes. AIML-1-01 Room 2.15 AIML",
     "keywords": [
       "session",
       "AIML-1-01",
@@ -3459,7 +3459,7 @@
     "itemId": "session-hwbp-1-03-2026-06-15-1530-room-2-16",
     "type": "session",
     "title": "Session HWBP-1-03",
-    "body": "6 listed papers in this timetable block. HWBP-1-03 Room 2.16 HWBP",
+    "body": "Talks cover buildings, retrofits, and energy performance, health, wellbeing, and occupant outcomes, and human behavior and perception. HWBP-1-03 Room 2.16 HWBP",
     "keywords": [
       "session",
       "HWBP-1-03",
@@ -3483,7 +3483,7 @@
     "itemId": "session-dmi-1-01-2026-06-15-1530-room-3-10",
     "type": "session",
     "title": "Session DMI-1-01",
-    "body": "6 listed papers in this timetable block. DMI-1-01 Room 3.10 DMI",
+    "body": "Talks cover microbes, mould, and bioaerosols, sensors, monitoring, and data models, and ventilation and air distribution. DMI-1-01 Room 3.10 DMI",
     "keywords": [
       "session",
       "DMI-1-01",
@@ -3495,7 +3495,7 @@
     "itemId": "session-dip-1-02-2026-06-15-1530-room-3-11",
     "type": "session",
     "title": "Session DIP-1-02",
-    "body": "6 listed papers in this timetable block. DIP-1-02 Room 3.11 DIP",
+    "body": "Talks cover sensors, monitoring, and data models, buildings, retrofits, and energy performance, and thermal comfort, humidity, and heat stress. DIP-1-02 Room 3.11 DIP",
     "keywords": [
       "session",
       "DIP-1-02",
@@ -3507,7 +3507,7 @@
     "itemId": "session-vad-1-02-2026-06-15-1530-room-3-12",
     "type": "session",
     "title": "Session VAD-1-02",
-    "body": "6 listed papers in this timetable block. VAD-1-02 Room 3.12 VAD",
+    "body": "Talks cover ventilation and air distribution, particulate matter and aerosol exposure, and buildings, retrofits, and energy performance. VAD-1-02 Room 3.12 VAD",
     "keywords": [
       "session",
       "VAD-1-02",
@@ -5092,7 +5092,7 @@
     "itemId": "session-ieq-1-04-2026-06-16-1030-room-tbc",
     "type": "session",
     "title": "Session IEQ-1-04",
-    "body": "6 listed papers in this timetable block. IEQ-1-04 Room TBC IEQ",
+    "body": "Talks cover thermal comfort, humidity, and heat stress, human behavior and perception, and indoor chemistry and VOCs. IEQ-1-04 Room TBC IEQ",
     "keywords": [
       "session",
       "IEQ-1-04",
@@ -5104,7 +5104,7 @@
     "itemId": "session-ieq-1-13-2026-06-16-1030-room-tbc",
     "type": "session",
     "title": "Session IEQ-1-13",
-    "body": "6 listed papers in this timetable block. IEQ-1-13 Room TBC IEQ",
+    "body": "Talks cover thermal comfort, humidity, and heat stress, sensors, monitoring, and data models, and human behavior and perception. IEQ-1-13 Room TBC IEQ",
     "keywords": [
       "session",
       "IEQ-1-13",
@@ -5116,7 +5116,7 @@
     "itemId": "session-iatm-1-03-2026-06-16-1030-room-tbc",
     "type": "session",
     "title": "Session IATM-1-03",
-    "body": "6 listed papers in this timetable block. IATM-1-03 Room TBC IATM",
+    "body": "Talks cover airborne infection and pathogen transmission, buildings, retrofits, and energy performance, and schools, homes, and community spaces. IATM-1-03 Room TBC IATM",
     "keywords": [
       "session",
       "IATM-1-03",
@@ -5128,7 +5128,7 @@
     "itemId": "session-mhvac-1-02-2026-06-16-1030-room-tbc",
     "type": "session",
     "title": "Session MHVAC-1-02",
-    "body": "6 listed papers in this timetable block. MHVAC-1-02 Room TBC MHVAC",
+    "body": "Talks cover buildings, retrofits, and energy performance, thermal comfort, humidity, and heat stress, and sensors, monitoring, and data models. MHVAC-1-02 Room TBC MHVAC",
     "keywords": [
       "session",
       "MHVAC-1-02",
@@ -5140,7 +5140,7 @@
     "itemId": "session-apm-1-03-2026-06-16-1030-room-tbc",
     "type": "session",
     "title": "Session APM-1-03",
-    "body": "6 listed papers in this timetable block. APM-1-03 Room TBC APM",
+    "body": "Talks cover particulate matter and aerosol exposure and schools, homes, and community spaces. APM-1-03 Room TBC APM",
     "keywords": [
       "session",
       "APM-1-03",
@@ -5152,7 +5152,7 @@
     "itemId": "session-hwbp-1-04-2026-06-16-1030-room-tbc",
     "type": "session",
     "title": "Session HWBP-1-04",
-    "body": "6 listed papers in this timetable block. HWBP-1-04 Room TBC HWBP",
+    "body": "Talks cover buildings, retrofits, and energy performance, health, wellbeing, and occupant outcomes, and policy, standards, ESG, and equity. HWBP-1-04 Room TBC HWBP",
     "keywords": [
       "session",
       "HWBP-1-04",
@@ -5176,7 +5176,7 @@
     "itemId": "session-icst-1-03-2026-06-16-1030-room-tbc",
     "type": "session",
     "title": "Session ICST-1-03",
-    "body": "6 listed papers in this timetable block. ICST-1-03 Room TBC ICST",
+    "body": "Talks cover indoor chemistry and VOCs, health, wellbeing, and occupant outcomes, and cleaning, disinfection, and air purification. ICST-1-03 Room TBC ICST",
     "keywords": [
       "session",
       "ICST-1-03",
@@ -5188,7 +5188,7 @@
     "itemId": "session-dip-1-03-2026-06-16-1030-room-tbc",
     "type": "session",
     "title": "Session DIP-1-03",
-    "body": "6 listed papers in this timetable block. DIP-1-03 Room TBC DIP",
+    "body": "Talks cover sensors, monitoring, and data models, thermal comfort, humidity, and heat stress, and buildings, retrofits, and energy performance. DIP-1-03 Room TBC DIP",
     "keywords": [
       "session",
       "DIP-1-03",
@@ -6577,7 +6577,7 @@
     "itemId": "session-ieq-1-05-2026-06-16-1330-room-tbc",
     "type": "session",
     "title": "Session IEQ-1-05",
-    "body": "6 listed papers in this timetable block. IEQ-1-05 Room TBC IEQ",
+    "body": "Talks cover thermal comfort, humidity, and heat stress, health, wellbeing, and occupant outcomes, and ventilation and air distribution. IEQ-1-05 Room TBC IEQ",
     "keywords": [
       "session",
       "IEQ-1-05",
@@ -6589,7 +6589,7 @@
     "itemId": "session-ieq-1-14-2026-06-16-1330-room-tbc",
     "type": "session",
     "title": "Session IEQ-1-14",
-    "body": "6 listed papers in this timetable block. IEQ-1-14 Room TBC IEQ",
+    "body": "Talks cover human behavior and perception, thermal comfort, humidity, and heat stress, and health, wellbeing, and occupant outcomes. IEQ-1-14 Room TBC IEQ",
     "keywords": [
       "session",
       "IEQ-1-14",
@@ -6601,7 +6601,7 @@
     "itemId": "session-iatm-1-04-2026-06-16-1330-room-tbc",
     "type": "session",
     "title": "Session IATM-1-04",
-    "body": "6 listed papers in this timetable block. IATM-1-04 Room TBC IATM",
+    "body": "Talks cover airborne infection and pathogen transmission, microbes, mould, and bioaerosols, and particulate matter and aerosol exposure. IATM-1-04 Room TBC IATM",
     "keywords": [
       "session",
       "IATM-1-04",
@@ -6625,7 +6625,7 @@
     "itemId": "session-apm-1-04-2026-06-16-1330-room-tbc",
     "type": "session",
     "title": "Session APM-1-04",
-    "body": "6 listed papers in this timetable block. APM-1-04 Room TBC APM",
+    "body": "Talks cover particulate matter and aerosol exposure, airborne infection and pathogen transmission, and buildings, retrofits, and energy performance. APM-1-04 Room TBC APM",
     "keywords": [
       "session",
       "APM-1-04",
@@ -6637,7 +6637,7 @@
     "itemId": "session-hwbp-1-05-2026-06-16-1330-room-tbc",
     "type": "session",
     "title": "Session HWBP-1-05",
-    "body": "6 listed papers in this timetable block. HWBP-1-05 Room TBC HWBP",
+    "body": "Talks cover health, wellbeing, and occupant outcomes, human behavior and perception, and thermal comfort, humidity, and heat stress. HWBP-1-05 Room TBC HWBP",
     "keywords": [
       "session",
       "HWBP-1-05",
@@ -6649,7 +6649,7 @@
     "itemId": "session-acf-1-02-2026-06-16-1330-room-tbc",
     "type": "session",
     "title": "Session ACF-1-02",
-    "body": "6 listed papers in this timetable block. ACF-1-02 Room TBC ACF",
+    "body": "Talks cover cleaning, disinfection, and air purification, indoor chemistry and VOCs, and particulate matter and aerosol exposure. ACF-1-02 Room TBC ACF",
     "keywords": [
       "session",
       "ACF-1-02",
@@ -6661,7 +6661,7 @@
     "itemId": "session-icst-1-04-2026-06-16-1330-room-tbc",
     "type": "session",
     "title": "Session ICST-1-04",
-    "body": "6 listed papers in this timetable block. ICST-1-04 Room TBC ICST",
+    "body": "Talks cover indoor chemistry and VOCs, buildings, retrofits, and energy performance, and health, wellbeing, and occupant outcomes. ICST-1-04 Room TBC ICST",
     "keywords": [
       "session",
       "ICST-1-04",
@@ -6685,7 +6685,7 @@
     "itemId": "session-vad-1-03-2026-06-16-1330-room-tbc",
     "type": "session",
     "title": "Session VAD-1-03",
-    "body": "6 listed papers in this timetable block. VAD-1-03 Room TBC VAD",
+    "body": "Talks cover ventilation and air distribution, schools, homes, and community spaces, and buildings, retrofits, and energy performance. VAD-1-03 Room TBC VAD",
     "keywords": [
       "session",
       "VAD-1-03",
@@ -7803,7 +7803,7 @@
     "itemId": "session-ieq-1-06-2026-06-16-1530-room-tbc",
     "type": "session",
     "title": "Session IEQ-1-06",
-    "body": "4 listed papers in this timetable block. IEQ-1-06 Room TBC IEQ",
+    "body": "Talks cover buildings, retrofits, and energy performance, health, wellbeing, and occupant outcomes, and schools, homes, and community spaces. IEQ-1-06 Room TBC IEQ",
     "keywords": [
       "session",
       "IEQ-1-06",
@@ -7815,7 +7815,7 @@
     "itemId": "session-ieq-1-15-2026-06-16-1530-room-tbc",
     "type": "session",
     "title": "Session IEQ-1-15",
-    "body": "4 listed papers in this timetable block. IEQ-1-15 Room TBC IEQ",
+    "body": "Talks cover buildings, retrofits, and energy performance, thermal comfort, humidity, and heat stress, and schools, homes, and community spaces. IEQ-1-15 Room TBC IEQ",
     "keywords": [
       "session",
       "IEQ-1-15",
@@ -7827,7 +7827,7 @@
     "itemId": "session-iatm-1-05-2026-06-16-1530-room-tbc",
     "type": "session",
     "title": "Session IATM-1-05",
-    "body": "4 listed papers in this timetable block. IATM-1-05 Room TBC IATM",
+    "body": "Talks cover airborne infection and pathogen transmission, transport, healthcare, and public environments, and human behavior and perception. IATM-1-05 Room TBC IATM",
     "keywords": [
       "session",
       "IATM-1-05",
@@ -7851,7 +7851,7 @@
     "itemId": "session-apm-1-05-2026-06-16-1530-room-tbc",
     "type": "session",
     "title": "Session APM-1-05",
-    "body": "4 listed papers in this timetable block. APM-1-05 Room TBC APM",
+    "body": "Talks cover particulate matter and aerosol exposure, schools, homes, and community spaces, and buildings, retrofits, and energy performance. APM-1-05 Room TBC APM",
     "keywords": [
       "session",
       "APM-1-05",
@@ -7863,7 +7863,7 @@
     "itemId": "session-hwbp-1-06-2026-06-16-1530-room-tbc",
     "type": "session",
     "title": "Session HWBP-1-06",
-    "body": "4 listed papers in this timetable block. HWBP-1-06 Room TBC HWBP",
+    "body": "Talks cover health, wellbeing, and occupant outcomes, thermal comfort, humidity, and heat stress, and buildings, retrofits, and energy performance. HWBP-1-06 Room TBC HWBP",
     "keywords": [
       "session",
       "HWBP-1-06",
@@ -7887,7 +7887,7 @@
     "itemId": "session-dmi-1-02-2026-06-16-1530-room-tbc",
     "type": "session",
     "title": "Session DMI-1-02",
-    "body": "4 listed papers in this timetable block. DMI-1-02 Room TBC DMI",
+    "body": "Talks cover microbes, mould, and bioaerosols, schools, homes, and community spaces, and particulate matter and aerosol exposure. DMI-1-02 Room TBC DMI",
     "keywords": [
       "session",
       "DMI-1-02",
@@ -7899,7 +7899,7 @@
     "itemId": "session-dip-1-04-2026-06-16-1530-room-tbc",
     "type": "session",
     "title": "Session DIP-1-04",
-    "body": "4 listed papers in this timetable block. DIP-1-04 Room TBC DIP",
+    "body": "Talks cover buildings, retrofits, and energy performance, sensors, monitoring, and data models, and thermal comfort, humidity, and heat stress. DIP-1-04 Room TBC DIP",
     "keywords": [
       "session",
       "DIP-1-04",
@@ -7911,7 +7911,7 @@
     "itemId": "session-vad-1-04-2026-06-16-1530-room-tbc",
     "type": "session",
     "title": "Session VAD-1-04",
-    "body": "4 listed papers in this timetable block. VAD-1-04 Room TBC VAD",
+    "body": "Talks cover ventilation and air distribution, sensors, monitoring, and data models, and buildings, retrofits, and energy performance. VAD-1-04 Room TBC VAD",
     "keywords": [
       "session",
       "VAD-1-04",
@@ -9050,7 +9050,7 @@
     "itemId": "session-iatm-1-06-2026-06-17-1030-room-tbc",
     "type": "session",
     "title": "Session IATM-1-06",
-    "body": "4 listed papers in this timetable block. IATM-1-06 Room TBC IATM",
+    "body": "Talks cover sensors, monitoring, and data models, airborne infection and pathogen transmission, and health, wellbeing, and occupant outcomes. IATM-1-06 Room TBC IATM",
     "keywords": [
       "session",
       "IATM-1-06",
@@ -9062,7 +9062,7 @@
     "itemId": "session-mhvac-1-03-2026-06-17-1030-room-tbc",
     "type": "session",
     "title": "Session MHVAC-1-03",
-    "body": "4 listed papers in this timetable block. MHVAC-1-03 Room TBC MHVAC",
+    "body": "Talks cover ventilation and air distribution, sensors, monitoring, and data models, and thermal comfort, humidity, and heat stress. MHVAC-1-03 Room TBC MHVAC",
     "keywords": [
       "session",
       "MHVAC-1-03",
@@ -9074,7 +9074,7 @@
     "itemId": "session-apm-1-06-2026-06-17-1030-room-tbc",
     "type": "session",
     "title": "Session APM-1-06",
-    "body": "4 listed papers in this timetable block. APM-1-06 Room TBC APM",
+    "body": "Talks cover particulate matter and aerosol exposure, schools, homes, and community spaces, and sensors, monitoring, and data models. APM-1-06 Room TBC APM",
     "keywords": [
       "session",
       "APM-1-06",
@@ -9086,7 +9086,7 @@
     "itemId": "session-hwbp-1-07-2026-06-17-1030-room-tbc",
     "type": "session",
     "title": "Session HWBP-1-07",
-    "body": "4 listed papers in this timetable block. HWBP-1-07 Room TBC HWBP",
+    "body": "Talks cover health, wellbeing, and occupant outcomes, thermal comfort, humidity, and heat stress, and buildings, retrofits, and energy performance. HWBP-1-07 Room TBC HWBP",
     "keywords": [
       "session",
       "HWBP-1-07",
@@ -9098,7 +9098,7 @@
     "itemId": "session-acf-1-03-2026-06-17-1030-room-tbc",
     "type": "session",
     "title": "Session ACF-1-03",
-    "body": "4 listed papers in this timetable block. ACF-1-03 Room TBC ACF",
+    "body": "Talks cover cleaning, disinfection, and air purification, microbes, mould, and bioaerosols, and schools, homes, and community spaces. ACF-1-03 Room TBC ACF",
     "keywords": [
       "session",
       "ACF-1-03",
@@ -9110,7 +9110,7 @@
     "itemId": "session-icst-1-05-2026-06-17-1030-room-tbc",
     "type": "session",
     "title": "Session ICST-1-05",
-    "body": "4 listed papers in this timetable block. ICST-1-05 Room TBC ICST",
+    "body": "Talks cover indoor chemistry and VOCs, particulate matter and aerosol exposure, and health, wellbeing, and occupant outcomes. ICST-1-05 Room TBC ICST",
     "keywords": [
       "session",
       "ICST-1-05",
@@ -9122,7 +9122,7 @@
     "itemId": "session-ieq-1-16-2026-06-17-1030-room-tbc",
     "type": "session",
     "title": "Session IEQ-1-16",
-    "body": "4 listed papers in this timetable block. IEQ-1-16 Room TBC IEQ",
+    "body": "Talks cover thermal comfort, humidity, and heat stress, buildings, retrofits, and energy performance, and health, wellbeing, and occupant outcomes. IEQ-1-16 Room TBC IEQ",
     "keywords": [
       "session",
       "IEQ-1-16",
@@ -9134,7 +9134,7 @@
     "itemId": "session-vad-1-05-2026-06-17-1030-room-tbc",
     "type": "session",
     "title": "Session VAD-1-05",
-    "body": "4 listed papers in this timetable block. VAD-1-05 Room TBC VAD",
+    "body": "Talks cover ventilation and air distribution, thermal comfort, humidity, and heat stress, and transport, healthcare, and public environments. VAD-1-05 Room TBC VAD",
     "keywords": [
       "session",
       "VAD-1-05",
@@ -10061,7 +10061,7 @@
     "itemId": "session-ieq-1-07-2026-06-17-1330-room-tbc",
     "type": "session",
     "title": "Session IEQ-1-07",
-    "body": "6 listed papers in this timetable block. IEQ-1-07 Room TBC IEQ",
+    "body": "Talks cover thermal comfort, humidity, and heat stress, health, wellbeing, and occupant outcomes, and human behavior and perception. IEQ-1-07 Room TBC IEQ",
     "keywords": [
       "session",
       "IEQ-1-07",
@@ -10073,7 +10073,7 @@
     "itemId": "session-ieq-1-17-2026-06-17-1330-room-tbc",
     "type": "session",
     "title": "Session IEQ-1-17",
-    "body": "6 listed papers in this timetable block. IEQ-1-17 Room TBC IEQ",
+    "body": "Talks cover schools, homes, and community spaces, sensors, monitoring, and data models, and thermal comfort, humidity, and heat stress. IEQ-1-17 Room TBC IEQ",
     "keywords": [
       "session",
       "IEQ-1-17",
@@ -10097,7 +10097,7 @@
     "itemId": "session-mhvac-1-04-2026-06-17-1330-room-tbc",
     "type": "session",
     "title": "Session MHVAC-1-04",
-    "body": "6 listed papers in this timetable block. MHVAC-1-04 Room TBC MHVAC",
+    "body": "Talks cover thermal comfort, humidity, and heat stress, buildings, retrofits, and energy performance, and schools, homes, and community spaces. MHVAC-1-04 Room TBC MHVAC",
     "keywords": [
       "session",
       "MHVAC-1-04",
@@ -10109,7 +10109,7 @@
     "itemId": "session-sb-1-02-2026-06-17-1330-room-tbc",
     "type": "session",
     "title": "Session SB-1-02",
-    "body": "6 listed papers in this timetable block. SB-1-02 Room TBC SB",
+    "body": "Talks cover sensors, monitoring, and data models, buildings, retrofits, and energy performance, and thermal comfort, humidity, and heat stress. SB-1-02 Room TBC SB",
     "keywords": [
       "session",
       "SB-1-02",
@@ -10121,7 +10121,7 @@
     "itemId": "session-hwbp-1-08-2026-06-17-1330-room-tbc",
     "type": "session",
     "title": "Session HWBP-1-08",
-    "body": "6 listed papers in this timetable block. HWBP-1-08 Room TBC HWBP",
+    "body": "Talks cover buildings, retrofits, and energy performance, schools, homes, and community spaces, and thermal comfort, humidity, and heat stress. HWBP-1-08 Room TBC HWBP",
     "keywords": [
       "session",
       "HWBP-1-08",
@@ -10133,7 +10133,7 @@
     "itemId": "session-acf-1-04-2026-06-17-1330-room-tbc",
     "type": "session",
     "title": "Session ACF-1-04",
-    "body": "6 listed papers in this timetable block. ACF-1-04 Room TBC ACF",
+    "body": "Talks cover indoor chemistry and VOCs, cleaning, disinfection, and air purification, and particulate matter and aerosol exposure. ACF-1-04 Room TBC ACF",
     "keywords": [
       "session",
       "ACF-1-04",
@@ -10145,7 +10145,7 @@
     "itemId": "session-icst-1-06-2026-06-17-1330-room-tbc",
     "type": "session",
     "title": "Session ICST-1-06",
-    "body": "6 listed papers in this timetable block. ICST-1-06 Room TBC ICST",
+    "body": "Talks cover indoor chemistry and VOCs, buildings, retrofits, and energy performance, and airborne infection and pathogen transmission. ICST-1-06 Room TBC ICST",
     "keywords": [
       "session",
       "ICST-1-06",
@@ -10157,7 +10157,7 @@
     "itemId": "session-dip-1-05-2026-06-17-1330-room-tbc",
     "type": "session",
     "title": "Session DIP-1-05",
-    "body": "6 listed papers in this timetable block. DIP-1-05 Room TBC DIP",
+    "body": "Talks cover buildings, retrofits, and energy performance, sensors, monitoring, and data models, and human behavior and perception. DIP-1-05 Room TBC DIP",
     "keywords": [
       "session",
       "DIP-1-05",
@@ -11282,7 +11282,7 @@
     "itemId": "session-ieq-1-08-2026-06-17-1530-room-tbc",
     "type": "session",
     "title": "Session IEQ-1-08",
-    "body": "6 listed papers in this timetable block. IEQ-1-08 Room TBC IEQ",
+    "body": "Talks cover buildings, retrofits, and energy performance, thermal comfort, humidity, and heat stress, and health, wellbeing, and occupant outcomes. IEQ-1-08 Room TBC IEQ",
     "keywords": [
       "session",
       "IEQ-1-08",
@@ -11294,7 +11294,7 @@
     "itemId": "session-ieq-1-18-2026-06-17-1530-room-tbc",
     "type": "session",
     "title": "Session IEQ-1-18",
-    "body": "6 listed papers in this timetable block. IEQ-1-18 Room TBC IEQ",
+    "body": "Talks cover thermal comfort, humidity, and heat stress, sensors, monitoring, and data models, and buildings, retrofits, and energy performance. IEQ-1-18 Room TBC IEQ",
     "keywords": [
       "session",
       "IEQ-1-18",
@@ -11306,7 +11306,7 @@
     "itemId": "session-aiml-1-02-2026-06-17-1530-room-tbc",
     "type": "session",
     "title": "Session AIML-1-02",
-    "body": "6 listed papers in this timetable block. AIML-1-02 Room TBC AIML",
+    "body": "Talks cover buildings, retrofits, and energy performance, health, wellbeing, and occupant outcomes, and policy, standards, ESG, and equity. AIML-1-02 Room TBC AIML",
     "keywords": [
       "session",
       "AIML-1-02",
@@ -11330,7 +11330,7 @@
     "itemId": "session-sb-1-03-2026-06-17-1530-room-tbc",
     "type": "session",
     "title": "Session SB-1-03",
-    "body": "6 listed papers in this timetable block. SB-1-03 Room TBC SB",
+    "body": "Talks cover sensors, monitoring, and data models, buildings, retrofits, and energy performance, and indoor chemistry and VOCs. SB-1-03 Room TBC SB",
     "keywords": [
       "session",
       "SB-1-03",
@@ -11342,7 +11342,7 @@
     "itemId": "session-hwbp-1-09-2026-06-17-1530-room-tbc",
     "type": "session",
     "title": "Session HWBP-1-09",
-    "body": "6 listed papers in this timetable block. HWBP-1-09 Room TBC HWBP",
+    "body": "Talks cover health, wellbeing, and occupant outcomes, buildings, retrofits, and energy performance, and thermal comfort, humidity, and heat stress. HWBP-1-09 Room TBC HWBP",
     "keywords": [
       "session",
       "HWBP-1-09",
@@ -11354,7 +11354,7 @@
     "itemId": "session-acf-1-05-2026-06-17-1530-room-tbc",
     "type": "session",
     "title": "Session ACF-1-05",
-    "body": "6 listed papers in this timetable block. ACF-1-05 Room TBC ACF",
+    "body": "Talks cover particulate matter and aerosol exposure, cleaning, disinfection, and air purification, and buildings, retrofits, and energy performance. ACF-1-05 Room TBC ACF",
     "keywords": [
       "session",
       "ACF-1-05",
@@ -11378,7 +11378,7 @@
     "itemId": "session-iap-1-02-2026-06-17-1530-room-tbc",
     "type": "session",
     "title": "Session IAP-1-02",
-    "body": "6 listed papers in this timetable block. IAP-1-02 Room TBC IAP",
+    "body": "Talks cover health, wellbeing, and occupant outcomes, policy, standards, ESG, and equity, and schools, homes, and community spaces. IAP-1-02 Room TBC IAP",
     "keywords": [
       "session",
       "IAP-1-02",
@@ -12463,7 +12463,7 @@
     "itemId": "session-ieq-1-09-2026-06-18-1130-room-tbc",
     "type": "session",
     "title": "Session IEQ-1-09",
-    "body": "3 listed papers in this timetable block. IEQ-1-09 Room TBC IEQ",
+    "body": "Talks cover health, wellbeing, and occupant outcomes, thermal comfort, humidity, and heat stress, and schools, homes, and community spaces. IEQ-1-09 Room TBC IEQ",
     "keywords": [
       "session",
       "IEQ-1-09",
@@ -12475,7 +12475,7 @@
     "itemId": "session-rb-1-02-2026-06-18-1130-room-tbc",
     "type": "session",
     "title": "Session RB-1-02",
-    "body": "3 listed papers in this timetable block. RB-1-02 Room TBC RB",
+    "body": "Talks cover thermal comfort, humidity, and heat stress, buildings, retrofits, and energy performance, and health, wellbeing, and occupant outcomes. RB-1-02 Room TBC RB",
     "keywords": [
       "session",
       "RB-1-02",
@@ -12487,7 +12487,7 @@
     "itemId": "session-iatm-1-07-2026-06-18-1130-room-tbc",
     "type": "session",
     "title": "Session IATM-1-07",
-    "body": "2 listed papers in this timetable block. IATM-1-07 Room TBC IATM",
+    "body": "Talks cover particulate matter and aerosol exposure, airborne infection and pathogen transmission, and sensors, monitoring, and data models. IATM-1-07 Room TBC IATM",
     "keywords": [
       "session",
       "IATM-1-07",
@@ -12511,7 +12511,7 @@
     "itemId": "session-aiml-1-03-2026-06-18-1130-room-tbc",
     "type": "session",
     "title": "Session AIML-1-03",
-    "body": "3 listed papers in this timetable block. AIML-1-03 Room TBC AIML",
+    "body": "Talks cover sensors, monitoring, and data models, thermal comfort, humidity, and heat stress, and buildings, retrofits, and energy performance. AIML-1-03 Room TBC AIML",
     "keywords": [
       "session",
       "AIML-1-03",
@@ -12523,7 +12523,7 @@
     "itemId": "session-hwbp-1-10-2026-06-18-1130-room-tbc",
     "type": "session",
     "title": "Session HWBP-1-10",
-    "body": "3 listed papers in this timetable block. HWBP-1-10 Room TBC HWBP",
+    "body": "Talks cover health, wellbeing, and occupant outcomes, thermal comfort, humidity, and heat stress, and sensors, monitoring, and data models. HWBP-1-10 Room TBC HWBP",
     "keywords": [
       "session",
       "HWBP-1-10",
@@ -12535,7 +12535,7 @@
     "itemId": "session-acf-1-06-2026-06-18-1130-room-tbc",
     "type": "session",
     "title": "Session ACF-1-06",
-    "body": "3 listed papers in this timetable block. ACF-1-06 Room TBC ACF",
+    "body": "Talks cover cleaning, disinfection, and air purification, particulate matter and aerosol exposure, and buildings, retrofits, and energy performance. ACF-1-06 Room TBC ACF",
     "keywords": [
       "session",
       "ACF-1-06",
@@ -12547,7 +12547,7 @@
     "itemId": "session-dmi-1-03-2026-06-18-1130-room-tbc",
     "type": "session",
     "title": "Session DMI-1-03",
-    "body": "3 listed papers in this timetable block. DMI-1-03 Room TBC DMI",
+    "body": "Talks cover microbes, mould, and bioaerosols, schools, homes, and community spaces, and buildings, retrofits, and energy performance. DMI-1-03 Room TBC DMI",
     "keywords": [
       "session",
       "DMI-1-03",
@@ -12559,7 +12559,7 @@
     "itemId": "session-iap-1-03-2026-06-18-1130-room-tbc",
     "type": "session",
     "title": "Session IAP-1-03",
-    "body": "3 listed papers in this timetable block. IAP-1-03 Room TBC IAP",
+    "body": "Talks cover policy, standards, ESG, and equity, transport, healthcare, and public environments, and health, wellbeing, and occupant outcomes. IAP-1-03 Room TBC IAP",
     "keywords": [
       "session",
       "IAP-1-03",

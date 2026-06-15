@@ -536,6 +536,93 @@ function makePresenterId(name) {
   return `presenter-${slug(name)}`;
 }
 
+const sessionTopicRules = [
+  {
+    label: "airborne infection and pathogen transmission",
+    pattern: /\b(infection|infectious|pathogen|virus|viral|respiratory|droplet|cough|airborne transmission|disease transmission|exhaled|inhalation)\b/i
+  },
+  {
+    label: "ventilation and air distribution",
+    pattern: /\b(ventilation|air distribution|airflow|air flow|exhaust|supply air|underfloor|natural ventilation|duct|fan|HVAC)\b/i
+  },
+  {
+    label: "particulate matter and aerosol exposure",
+    pattern: /\b(particulate|particles?|PM2\.?5|PM1|ultrafine|aerosols?|filtration|filter|smoke|wildfire)\b/i
+  },
+  {
+    label: "indoor chemistry and VOCs",
+    pattern: /\b(VOC|VOCs|volatile|SVOC|PFAS|PAH|formaldehyde|ozone|NOx|radon|chemical|emissions?|sorption|reactivity|contamination)\b/i
+  },
+  {
+    label: "thermal comfort, humidity, and heat stress",
+    pattern: /\b(thermal|temperature|humidity|humid|heat|overheating|cooling|radiant|comfort|sleep environment|clothing insulation)\b/i
+  },
+  {
+    label: "health, wellbeing, and occupant outcomes",
+    pattern: /\b(health|wellbeing|well-being|cognitive|productivity|mental|asthma|respiratory health|stress|sleep quality|comfort|mucus|disease burden)\b/i
+  },
+  {
+    label: "sensors, monitoring, and data models",
+    pattern: /\b(sensor|sensors|monitoring|measurement|prediction|model|models|machine learning|AI|digital twin|simulation|CFD|IoT|data-driven|algorithm)\b/i
+  },
+  {
+    label: "buildings, retrofits, and energy performance",
+    pattern: /\b(building|buildings|retrofit|energy|envelope|facade|residential|housing|office|workplace|campus|school building)\b/i
+  },
+  {
+    label: "schools, homes, and community spaces",
+    pattern: /\b(school|schools|classroom|classrooms|student|students|children|preschool|home|homes|dwelling|dwellings|residential|community)\b/i
+  },
+  {
+    label: "policy, standards, ESG, and equity",
+    pattern: /\b(policy|policies|standard|standards|ESG|environmental justice|equity|scope 3|framework|global movement|compliance|decision-making)\b/i
+  },
+  {
+    label: "cleaning, disinfection, and air purification",
+    pattern: /\b(cleaning|disinfection|disinfect|purification|air purifier|air cleaner|UVGI|Far-UVC|filter media|plants|biofilter)\b/i
+  },
+  {
+    label: "microbes, mould, and bioaerosols",
+    pattern: /\b(microbial|microbes|bacteria|fungal|fungi|mould|mold|bioaerosol|bioaerosols|Staphylococcus|pathogenic)\b/i
+  },
+  {
+    label: "transport, healthcare, and public environments",
+    pattern: /\b(train|rail|metro|vehicle|hospital|healthcare|patient|ward|station|public building|underground|airport|gate-to-gate)\b/i
+  },
+  {
+    label: "human behavior and perception",
+    pattern: /\b(behavior|behaviour|perception|perceptual|occupant|occupants|human exposure|decision|walkability|odor|odour|smell|survey)\b/i
+  }
+];
+
+function formatList(values) {
+  if (values.length <= 1) return values[0] ?? "";
+  if (values.length === 2) return `${values[0]} and ${values[1]}`;
+  return `${values.slice(0, -1).join(", ")}, and ${values.at(-1)}`;
+}
+
+function summarizeSession(items) {
+  const talks = items.filter((item) => item.type === "talk" && /^Oral/i.test(item.order ?? ""));
+  if (!talks.length) return undefined;
+
+  const scores = sessionTopicRules
+    .map((rule) => ({
+      label: rule.label,
+      score: talks.reduce((count, talk) => count + (rule.pattern.test(talk.title) ? 1 : 0), 0)
+    }))
+    .filter((entry) => entry.score > 0)
+    .sort((a, b) => b.score - a.score || a.label.localeCompare(b.label));
+
+  const topics = scores.slice(0, 3).map((entry) => entry.label);
+  if (topics.length) return `Talks cover ${formatList(topics)}.`;
+
+  const titleTopics = talks
+    .slice(0, 3)
+    .map((talk) => clean(talk.title).replace(/[.:;]$/, "").toLowerCase());
+  if (titleTopics.length) return `Talks cover ${formatList(titleTopics)}.`;
+  return undefined;
+}
+
 function buildSearchDocuments(events, presenters) {
   const documents = [];
   for (const item of events) {
@@ -780,6 +867,14 @@ for (const record of details.records) {
   if (item.parentId && eventMap.has(item.parentId)) {
     eventMap.get(item.parentId).childItemIds.push(item.id);
   }
+}
+
+for (const session of eventMap.values()) {
+  if (session.type !== "session") continue;
+  const children = (session.childItemIds ?? [])
+    .map((itemId) => eventMap.get(itemId))
+    .filter(Boolean);
+  session.description = summarizeSession(children) ?? session.description;
 }
 
 for (const specialEvent of programme.specialEvents) {

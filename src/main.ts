@@ -116,6 +116,21 @@ const searchResultNouns: Record<SearchType, string> = {
   keynote: "keynote",
   break: "break"
 };
+const searchTypesByView: Record<View, SearchType[]> = {
+  home: ["all", "session", "talk", "poster", "keynote", "break"],
+  schedule: ["all", "session", "talk", "poster", "keynote", "break"],
+  posters: ["all", "poster"],
+  presenters: ["all", "presenter", "session", "talk", "poster", "keynote", "break"],
+  favorites: ["all", "session", "talk", "poster", "keynote", "break"]
+};
+
+function allowedSearchTypes(): SearchType[] {
+  return searchTypesByView[state.view];
+}
+
+function normalizedSearchType(type: SearchType): SearchType {
+  return allowedSearchTypes().includes(type) ? type : "all";
+}
 
 function escapeHtml(value: unknown): string {
   return String(value ?? "")
@@ -256,7 +271,9 @@ function favoriteButton(itemId: string): string {
 
 function renderItemCard(item: ProgramItem, compact = false): string {
   const presentersText = presenterNames(item).slice(0, 4).join(", ");
-  const description = compact ? "" : item.description || presentersText;
+  const genericSessionDescription = item.type === "session" && /listed paper/.test(item.description ?? "");
+  const description =
+    compact && (item.type !== "session" || genericSessionDescription) ? "" : item.description || presentersText;
   const warning = item.warnings?.length ? `<span class="meta warning">${icon("triangle-alert")} ${item.warnings.length}</span>` : "";
   return `
     <article class="card item-card clickable" data-open="${escapeHtml(item.id)}" tabindex="0">
@@ -342,6 +359,7 @@ function getSearchEntries(query: string): SearchEntry[] {
   const trimmed = query.trim();
   if (!trimmed) return [];
 
+  const allowedTypes = new Set(allowedSearchTypes());
   const results = searchIndex.search(trimmed, {
     prefix: true,
     fuzzy: trimmed.length > 4 ? 0.2 : false,
@@ -359,6 +377,7 @@ function getSearchEntries(query: string): SearchEntry[] {
 
     const kind = searchDocumentKind(doc);
     if (!kind) continue;
+    if (!allowedTypes.has(kind)) continue;
 
     if (doc.itemId) {
       const item = eventsById.get(doc.itemId);
@@ -391,12 +410,14 @@ function renderSearchFilterBar(): string {
   if (!query) return "";
 
   const counts = getSearchCounts(getSearchEntries(query));
+  const visibleOptions = searchFilterOptions.filter(([type]) => allowedSearchTypes().includes(type));
+  const activeSearchType = normalizedSearchType(state.searchType);
   return `
     <div class="search-filter-row" aria-label="Search result filters">
-      ${searchFilterOptions
+      ${visibleOptions
         .map(
           ([type, label]) => `
-            <button class="search-filter-chip ${state.searchType === type ? "active" : ""}" data-search-type="${type}" ${counts[type] === 0 ? "disabled" : ""}>
+            <button class="search-filter-chip ${activeSearchType === type ? "active" : ""}" data-search-type="${type}" ${counts[type] === 0 ? "disabled" : ""}>
               <span>${escapeHtml(label)}</span>
               <strong>${counts[type]}</strong>
             </button>
@@ -604,14 +625,15 @@ function renderFavorites(): string {
 function renderSearchResults(): string {
   const query = state.query.trim();
   if (!query) return "";
+  const activeSearchType = normalizedSearchType(state.searchType);
   const entries = getSearchEntries(query);
   const filteredEntries =
-    state.searchType === "all" ? entries : entries.filter((entry) => entry.kind === state.searchType);
+    activeSearchType === "all" ? entries : entries.filter((entry) => entry.kind === activeSearchType);
   const cards = filteredEntries.slice(0, 80).map((entry) => entry.html);
-  const filterLabel = searchFilterOptions.find(([type]) => type === state.searchType)?.[1] ?? "Results";
-  const resultNoun = searchResultNouns[state.searchType];
+  const filterLabel = searchFilterOptions.find(([type]) => type === activeSearchType)?.[1] ?? "Results";
+  const resultNoun = searchResultNouns[activeSearchType];
   const resultSummary =
-    state.searchType === "all"
+    activeSearchType === "all"
       ? `${filteredEntries.length} result${filteredEntries.length === 1 ? "" : "s"}`
       : `${filteredEntries.length} ${resultNoun} result${filteredEntries.length === 1 ? "" : "s"} of ${entries.length}`;
 
@@ -624,7 +646,7 @@ function renderSearchResults(): string {
         </div>
       </div>
       <div class="grid two">
-        ${cards.length ? cards.join("") : `<div class="empty">No ${state.searchType === "all" ? "" : `${escapeHtml(filterLabel.toLowerCase())} `}matches. Try another filter, paper ID, presenter surname, room, panel code, or topic.</div>`}
+        ${cards.length ? cards.join("") : `<div class="empty">No ${activeSearchType === "all" ? "" : `${escapeHtml(filterLabel.toLowerCase())} `}matches. Try another filter, paper ID, presenter surname, room, panel code, or topic.</div>`}
       </div>
     </section>
   `;
@@ -746,7 +768,7 @@ function render() {
           </div>
           <p class="site-disclaimer">
             ${icon("info")}
-            <span>This is an unofficial site to help conference participants find sessions, talks, and posters they are interested in. It was developed by <a href="https://www.airgradient.com/" target="_blank" rel="noreferrer">AirGradient</a>, which also has a booth at the conference. The data was extracted from the conference PDF documents. If you find any problems, please email <a href="mailto:indoor-air-2026@airgradient.com">indoor-air-2026@airgradient.com</a>.</span>
+            <span>This is an unofficial site to help conference participants find sessions, talks, and posters they are interested in. It was developed by <a href="https://www.airgradient.com/" target="_blank" rel="noreferrer">AirGradient</a>, which also has a booth at the conference. The data was extracted from the conference PDF documents. If you find any problems, please email <a href="mailto:indoor-air-2026@airgradient.com">indoor-air-2026@airgradient.com</a>. You can also enter the lucky draw to win an <a href="https://www.airgradient.com/indoor/" target="_blank" rel="noreferrer">AirGradient ONE</a> indoor air monitor, in collaboration with <a href="https://goaqs.org/" target="_blank" rel="noreferrer">GO AQS</a>, using the <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6LThD8Lv_-xFbU2wRaNdPfZ6hPtm-EoKl2tSU2hrBoZoOrg/viewform" target="_blank" rel="noreferrer">entry form</a>.</span>
           </p>
           <div class="search-row">
             <div class="search-box">
