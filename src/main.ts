@@ -881,13 +881,17 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+function dataUrl(filename: string) {
+  return `${import.meta.env.BASE_URL}data/${filename}`;
+}
+
 async function init() {
   const [eventData, presenterData, searchData, sourceData, validationData] = await Promise.all([
-    fetch("/data/events.json").then((response) => response.json()),
-    fetch("/data/presenters.json").then((response) => response.json()),
-    fetch("/data/search-index.json").then((response) => response.json()),
-    fetch("/data/sources.json").then((response) => response.json()),
-    fetch("/data/validation-report.json").then((response) => response.json())
+    fetch(dataUrl("events.json")).then((response) => response.json()),
+    fetch(dataUrl("presenters.json")).then((response) => response.json()),
+    fetch(dataUrl("search-index.json")).then((response) => response.json()),
+    fetch(dataUrl("sources.json")).then((response) => response.json()),
+    fetch(dataUrl("validation-report.json")).then((response) => response.json())
   ]);
 
   events = eventData;
