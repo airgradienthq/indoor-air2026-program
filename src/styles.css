@@ -465,6 +465,13 @@ button {
   overflow: hidden;
 }
 
+.session-description {
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: initial;
+  overflow: visible;
+}
+
 .meta-row,
 .filter-row {
   display: flex;

@@ -274,6 +274,7 @@ function renderItemCard(item: ProgramItem, compact = false): string {
   const genericSessionDescription = item.type === "session" && /listed paper/.test(item.description ?? "");
   const description =
     compact && (item.type !== "session" || genericSessionDescription) ? "" : item.description || presentersText;
+  const descriptionClass = item.type === "session" ? "item-description session-description" : "item-description";
   const warning = item.warnings?.length ? `<span class="meta warning">${icon("triangle-alert")} ${item.warnings.length}</span>` : "";
   return `
     <article class="card item-card clickable" data-open="${escapeHtml(item.id)}" tabindex="0">
@@ -286,7 +287,7 @@ function renderItemCard(item: ProgramItem, compact = false): string {
           ${favoriteButton(item.id)}
         </div>
       </div>
-      ${description ? `<p class="item-description">${escapeHtml(description)}</p>` : ""}
+      ${description ? `<p class="${descriptionClass}">${escapeHtml(description)}</p>` : ""}
       <div class="meta-row">
         <span class="meta">${icon("clock")} <strong>${escapeHtml(formatRange(item))}</strong></span>
         ${item.room || item.location ? `<span class="meta">${icon("map-pin")} ${escapeHtml(item.room || item.location)}</span>` : ""}
