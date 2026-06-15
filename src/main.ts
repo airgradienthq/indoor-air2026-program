@@ -746,7 +746,7 @@ function render() {
           </div>
           <p class="site-disclaimer">
             ${icon("info")}
-            <span>This is an unofficial site to help conference participants find sessions, talks, and posters they are interested in. It was developed by <a href="https://www.airgradient.com/" target="_blank" rel="noreferrer">AirGradient</a>, which also has a booth at the conference.</span>
+            <span>This is an unofficial site to help conference participants find sessions, talks, and posters they are interested in. It was developed by <a href="https://www.airgradient.com/" target="_blank" rel="noreferrer">AirGradient</a>, which also has a booth at the conference. The data was extracted from the conference PDF documents. If you find any problems, please email <a href="mailto:indoor-air-2026@airgradient.com">indoor-air-2026@airgradient.com</a>.</span>
           </p>
           <div class="search-row">
             <div class="search-box">
