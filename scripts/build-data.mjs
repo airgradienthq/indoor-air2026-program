@@ -698,9 +698,10 @@ for (const slot of programme.sessionSlots) {
 for (const record of details.records) {
   const assignment = posterAssignments.assignments.get(record.paperId);
   const programmeSchedule = programme.paperSchedule.get(record.paperId);
+  const sessionSlot = sessionSlotsByCode.get(record.sessionCode);
   const posterSessionSlot =
     record.type === "poster"
-      ? sessionSlotsByCode.get(assignment?.sessionCode) ?? sessionSlotsByCode.get(record.sessionCode)
+      ? sessionSlotsByCode.get(assignment?.sessionCode) ?? sessionSlot
       : undefined;
   const posterSessionSchedule = posterSessionSlot
     ? {
@@ -716,6 +717,21 @@ for (const record of details.records) {
         sourceSnippet: posterSessionSlot.sourceSnippet
       }
     : undefined;
+  const talkSessionSchedule =
+    record.type === "talk" && sessionSlot
+      ? {
+          sessionId: sessionSlot.id,
+          sessionCode: sessionSlot.sessionCode,
+          date: sessionSlot.date,
+          startTime: sessionSlot.startTime,
+          endTime: sessionSlot.endTime,
+          timezone,
+          room: sessionSlot.room,
+          sourceFile: sessionSlot.sourceFile,
+          sourcePage: sessionSlot.sourcePage,
+          sourceSnippet: sessionSlot.sourceSnippet
+        }
+      : undefined;
   const assignmentSchedule =
     record.type === "poster" && assignment?.date && assignment?.startTime && assignment?.endTime
       ? {
@@ -729,7 +745,10 @@ for (const record of details.records) {
           sourceSnippet: assignment.sourceSnippet
         }
       : undefined;
-  const schedule = record.type === "poster" ? posterSessionSchedule ?? programmeSchedule ?? assignmentSchedule : programmeSchedule;
+  const schedule =
+    record.type === "poster"
+      ? posterSessionSchedule ?? programmeSchedule ?? assignmentSchedule
+      : programmeSchedule ?? talkSessionSchedule;
   const sessionCode = record.type === "poster" && assignment?.sessionCode ? assignment.sessionCode : record.sessionCode;
   const override = corrections.itemOverrides?.[record.paperId] ?? {};
   const warnings = [...record.warnings];
@@ -745,7 +764,7 @@ for (const record of details.records) {
     timezone,
     room: override.room ?? schedule?.room,
     location: override.location ?? assignment?.room ?? schedule?.room,
-    parentId: posterSessionSchedule?.sessionId ?? programmeSchedule?.sessionId,
+    parentId: schedule?.sessionId,
     track: sessionCode.split("-")[0],
     sessionCode,
     posterPanel: override.posterPanel ?? assignment?.panel,

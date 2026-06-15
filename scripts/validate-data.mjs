@@ -60,12 +60,12 @@ for (const event of events) {
   if (event.parentId) {
     failIf(!eventIds.has(event.parentId), errors, `Event ${event.id} references missing parentId ${event.parentId}.`);
     const parent = eventById.get(event.parentId);
-    if (event.type === "poster" && parent?.type === "session") {
-      failIf(event.date !== parent.date, errors, `Poster ${event.id} date differs from parent session ${event.parentId}.`);
+    if (["talk", "poster"].includes(event.type) && parent?.type === "session") {
+      failIf(event.date !== parent.date, errors, `${event.type} ${event.id} date differs from parent session ${event.parentId}.`);
       failIf(
         event.startTime !== parent.startTime || event.endTime !== parent.endTime,
         errors,
-        `Poster ${event.id} time differs from parent session ${event.parentId}.`
+        `${event.type} ${event.id} time differs from parent session ${event.parentId}.`
       );
     }
   }
