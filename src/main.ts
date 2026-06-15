@@ -765,6 +765,16 @@ function render() {
           <div class="detail-panel">${renderDetail()}</div>
         </div>
       </main>
+      <footer class="site-footer">
+        <div class="site-footer-inner">
+          <div class="footer-icon">${icon("gift")}</div>
+          <div>
+            <h2>Win an AirGradient ONE indoor air monitor</h2>
+            <p>AirGradient will run a lucky draw in cooperation with GO AQS on the last day of the conference. Four participants can win an <a href="https://www.airgradient.com/indoor/" target="_blank" rel="noreferrer">AirGradient ONE</a> indoor air monitor.</p>
+            <a class="footer-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSe6LThD8Lv_-xFbU2wRaNdPfZ6hPtm-EoKl2tSU2hrBoZoOrg/viewform" target="_blank" rel="noreferrer">${icon("ticket")} Enter the lucky draw</a>
+          </div>
+        </div>
+      </footer>
       <div class="mobile-detail ${state.selectedItemId || state.selectedPresenterId ? "" : "hidden"}">${renderDetail()}</div>
     </div>
   `;
