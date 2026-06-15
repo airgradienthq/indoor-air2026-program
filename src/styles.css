@@ -110,17 +110,17 @@ button {
   position: relative;
 }
 
-.search-box i,
-.button i,
-.icon-button i,
-.tab i,
-.meta i {
+.search-box > .lucide,
+.button .lucide,
+.icon-button .lucide,
+.tab .lucide,
+.meta .lucide {
   width: 17px;
   height: 17px;
   flex: 0 0 auto;
 }
 
-.search-box i {
+.search-box > .lucide-search {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -161,6 +161,7 @@ button {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 6px;
+  align-items: stretch;
 }
 
 .search-filter-row {
@@ -235,6 +236,7 @@ button {
 
 .tab {
   min-width: 0;
+  min-height: 46px;
   padding: 0 8px;
   font-size: 0.86rem;
 }
