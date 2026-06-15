@@ -1,0 +1,22 @@
+{
+  "name": "indoor-air-program",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "data": "node scripts/build-data.mjs",
+    "validate:data": "node scripts/validate-data.mjs",
+    "build": "npm run data && npm run validate:data && tsc && vite build",
+    "dev": "npm run data && npm run validate:data && vite --host 127.0.0.1",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "lucide": "^0.468.0",
+    "minisearch": "^7.1.0",
+    "pdfjs-dist": "^4.10.38"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^8.0.16"
+  }
+}
