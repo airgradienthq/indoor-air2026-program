@@ -46,8 +46,7 @@ button {
 }
 
 .topbar {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 10;
   border-bottom: 1px solid var(--line);
   background: rgb(247 245 239 / 96%);
@@ -587,6 +586,11 @@ button {
 }
 
 @media (min-width: 720px) {
+  .topbar {
+    position: sticky;
+    top: 0;
+  }
+
   .search-row {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
